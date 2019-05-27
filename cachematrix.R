@@ -28,8 +28,8 @@ cacheSolve <- function(x, ...) {
 }
 
 ## Run test
-my_matrix <- matrix(c(3,-4,2,-5), nrow=2, ncol=2)
-inv <- makeCacheMatrix(x)
+my_matrix <- matrix(c(3,-4,2,-5), 2, 2)
+inv <- makeCacheMatrix(my_matrix)
 cacheSolve(inv)
 
 #=======================
@@ -56,6 +56,6 @@ cacheSolve <- function(y, ...) {
 }
 
 ## Test
-my_matrix <- matrix(c(3,-4,2,-5), nrow=2, ncol=2)
-inv <- makeCacheMatrix(x)
+my_matrix <- matrix(c(3,-4,2,-5), 2, 2)
+inv <- makeCacheMatrix(my_matrix)
 cacheSolve(inv)
